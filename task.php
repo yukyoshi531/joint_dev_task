@@ -356,3 +356,42 @@ foreach ($humans as $human) {
 }
 
 echo PHP_EOL;
+
+print("#####q21#####".PHP_EOL);
+for($i = 1 ; $i <= 30 ; $i++){
+
+    if($i % 3 == 0 && $i % 5 == 0){  
+
+        echo "FizzBuzz";
+        echo "<br>";
+
+    }elseif($i % 3 == 0 && $i % 7 == 0){ 
+        
+        echo "FizzHoge";
+        echo "<br>";
+    
+    }elseif($i % 3 ==0){
+
+        echo "Fizz";
+        echo "<br>";
+
+    }elseif($i % 5 == 0){
+
+        echo "Buzz";
+        echo "<br>";
+
+    }elseif($i % 7 == 0){
+
+        echo "Hoge";
+        echo "<br>";
+    
+    
+    }else{
+
+        echo $i;
+        echo "<br>";
+    }
+
+}
+
+echo PHP_EOL;
