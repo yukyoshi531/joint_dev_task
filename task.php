@@ -359,39 +359,25 @@ echo PHP_EOL;
 
 print("#####q21#####".PHP_EOL);
 for($i = 1 ; $i <= 30 ; $i++){
-
-    if($i % 3 == 0 && $i % 5 == 0){  
-
-        echo "FizzBuzz";
-        echo "<br>";
-
-    }elseif($i % 3 == 0 && $i % 7 == 0){ 
-        
-        echo "FizzHoge";
-        echo "<br>";
-    
-    }elseif($i % 3 ==0){
-
-        echo "Fizz";
-        echo "<br>";
-
-    }elseif($i % 5 == 0){
-
-        echo "Buzz";
-        echo "<br>";
-
-    }elseif($i % 7 == 0){
-
-        echo "Hoge";
-        echo "<br>";
-    
-    
-    }else{
-
-        echo $i;
-        echo "<br>";
+    if ( $i % 105 == 0) {
+        echo "FizzBuzzHoge\n";
+    } elseif ($i % 35 == 0 ) {
+        echo "BuzzHoge\n";
+    } elseif ($i % 21 == 0 ) {
+        echo "FizzHoge\n";
+    } elseif ($i % 15 == 0 ) {
+        echo "FizzBuzz\n";
+    } elseif ($i % 7 == 0 ) {
+        echo "Hoge\n";
+    } elseif ($i % 5 == 0) {
+        echo "Buzz\n";
+    } elseif ($i % 3 == 0) {
+        echo "Fizz\n";
+    } else {
+        echo $i."\n";
     }
-
 }
+
+    
 
 echo PHP_EOL;
